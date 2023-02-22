@@ -40,9 +40,20 @@ In this regex, ```()``` parentheses are used to capture a group. The first set o
 ### Bracket Expressions
 The 'Bracket Expressions' ```[]``` is really anything found insides of the brackets ```[]```. Anything found inside the brackets creates a range of characters that tells us what we want to match within the text. In the expression above we can find three bracket expressions: ```[0-9]```, ```[a-z]```, and ```[_\.-]```. 
 
-
+The expression ```[0-9]``` means that any number between 0 and 9. ```[a-z]``` marks any lowercase letter from a to z. Lastly, ```[_\.-] ```denotes the special characters that can be used: underscore ```(_)```, backwards slash ```(/)```, period ```(.)```, and dash ```(-)```.
 
 ### Character Classes
+A character class is a set of characters that can occur in input stings to fulfill a match. The bracket expressions mentioned above are and example of this. There are two more examples that can be found in our email example from above. 
+
+A period ```[.]``` matches any character except the newline character ```[\n]```.
+
+```[\d]``` Matches any Arabic numeral digit. The class is equivalent to the bracket expression ```[0-9]```.
+
+```[\w]``` Matches any alphanumeric character from the basi Latin alphabet, including the underscore ```(_)```. This class is equivalent to the bracket expression ```[A-Za-z0-9_]```.
+
+```[\s]``` Matches a single whitespace character, including tabs and line breaks.  
+
+
 
 ### The OR Operator
 
